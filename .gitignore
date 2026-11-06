@@ -1,0 +1,6 @@
+.DS_Store
+.claude/
+source-art/
+node_modules/
+.vercel
+*.mp4

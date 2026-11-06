@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ramnath Babu — Senior App Developer at Bhookle</title>
+<meta name="description" content="Ramnath Babu — Senior App Developer at Bhookle, building its home-food delivery apps (100K+ installs). 8+ years full stack: React Native, Angular, Node, PostgreSQL, Firebase, Spring Boot, Laravel.">
+<meta name="theme-color" content="#070b18">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<canvas id="scene" aria-hidden="true"></canvas>
+<div class="veil" aria-hidden="true"></div>
+
+<header class="nav">
+  <a href="#home" class="logo" aria-label="Home">R<span>B</span></a>
+  <nav class="links">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#journey">Journey</a>
+    <a href="#experience">Experience</a>
+    <a href="#stack">Stack</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="tod-wrap">
+    <button class="tod" type="button" aria-expanded="false" aria-label="Time of day and weather"><i class="tod-ic">☀</i><span class="tod-time">--:-- IST</span><em class="tod-mode">Live</em><span class="tod-wx"></span></button>
+    <div class="tod-panel" hidden>
+      <div class="tod-row"><b class="tod-big">--:--</b><span class="tod-phase">Live in Chennai</span></div>
+      <input type="range" class="tod-range" min="0" max="1439" step="1" aria-label="Time of day">
+      <div class="tod-ticks"><span>00</span><span>06</span><span>12</span><span>18</span><span>24</span></div>
+      <div class="tod-chips"><button type="button" data-h="live" class="on">Live</button><button type="button" data-h="sunrise">Sunrise</button><button type="button" data-h="noon">Noon</button><button type="button" data-h="sunset">Sunset</button><button type="button" data-h="night">Night</button></div>
+      <p class="tod-weather">Chennai now: <b class="wx-text">Loading weather…</b></p>
+    </div>
+  </div>
+  <a href="#contact" class="btn ghost sm connect">Let's Connect <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+
+<div class="menu" aria-hidden="true">
+  <nav>
+    <a href="#home"><i>⌂</i>Home</a>
+    <a href="#about"><i>◎</i>About</a>
+    <a href="#journey"><i>↗</i>Journey</a>
+    <a href="#experience"><i>◷</i>Experience</a>
+    <a href="#stack"><i>▤</i>Tech Stack</a>
+    <a href="#skills"><i>✦</i>Skills</a>
+    <a href="#projects"><i>▣</i>Projects</a>
+    <a href="#contact"><i>✉</i>Contact</a>
+  </nav>
+  <div class="menu-foot">
+    <div class="socials">
+      <a href="https://github.com/ramnath1997" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.3 6.4-1.5 6.4-7A5.4 5.4 0 0 0 20 4.8 5 5 0 0 0 19.9 1S18.7.7 16 2.5a13.4 13.4 0 0 0-7 0C6.3.7 5.1 1 5.1 1A5 5 0 0 0 5 4.8a5.4 5.4 0 0 0-1.5 3.7c0 5.4 3.3 6.6 6.4 7a3.4 3.4 0 0 0-.9 2.6V22"/></svg></a>
+      <a href="mailto:sharewithramnath@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+    </div>
+    <b>Ramnath Babu</b>
+    <small>Build · Solve · Create Impact</small>
+  </div>
+</div>
+
+<main>
+  <!-- 00 HERO -->
+  <section id="home" class="sec hero side-l" data-cam="0">
+    <div class="wrap">
+      <div class="col">
+        <p class="eyebrow">Senior App Developer · Bhookle <em></em></p>
+        <h1 class="display">Ramnath<br><span class="accent">Babu.</span></h1>
+        <p class="lead">I build the apps behind Bhookle's home-food delivery in Bengaluru &amp; Chennai — 100K+ installs across Android and iOS. Before that: logistics platforms for Singapore and India's first home-food brand app.</p>
+        <div class="ctas">
+          <a href="#projects" class="btn primary">View My Work <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <a href="resume.pdf" class="btn ghost" download><svg viewBox="0 0 24 24"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg> Download Resume</a>
+        </div>
+        <div class="stats">
+          <div><b data-count="8">0</b><sup>+</sup><span>Years<br>Experience</span></div>
+          <div><b data-count="100">0</b><sup>K+</sup><span>App<br>Installs</span></div>
+          <div><b data-count="20">0</b><sup>+</sup><span>Projects<br>Delivered</span></div>
+          <div><b data-count="4">0</b><span>Countries<br>Served</span></div>
+        </div>
+      </div>
+      <p class="script hero-script">"Turning<br>Ideas into<br>Real Products"</p>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll"><span></span>Scroll</a>
+  </section>
+
+  <!-- 01 ABOUT -->
+  <section id="about" class="sec side-l" data-cam="1">
+    <div class="wrap">
+      <div class="col">
+        <p class="kicker"><b>01</b>About Me</p>
+        <h2>More than a<br>Software <span class="accent">Engineer.</span></h2>
+        <p class="body">I'm Ramnath, a full-stack engineer and product builder from Kulithalai, working out of Chennai. For 8+ years I've shipped enterprise logistics systems, e-commerce storefronts and consumer apps. Today I'm a <strong>Senior App Developer at Bhookle</strong>, owning its customer, chef and admin apps end to end — <strong>React Native, Angular, Node and PostgreSQL</strong> — with a soft spot for IoT.</p>
+        <div class="cards4">
+          <article class="card"><i class="ic">◆</i><h4>Problem Solver</h4><p>From a hackathon-winning language to auto-irrigation bots.</p></article>
+          <article class="card"><i class="ic">◎</i><h4>Product Thinker</h4><p>Idea to launch — founded TechRatham, shipped apps for real businesses.</p></article>
+          <article class="card"><i class="ic">✦</i><h4>Team Lead</h4><p>Led delivery for clients in Singapore, US &amp; Vietnam.</p></article>
+          <article class="card"><i class="ic">↻</i><h4>Continuous Learner</h4><p>Java → PHP → React → DevOps → IoT.</p></article>
+        </div>
+      </div>
+      <p class="script">Code<br>Design<br>Products<br>People</p>
+    </div>
+  </section>
+
+  <!-- 02 JOURNEY -->
+  <section id="journey" class="sec side-l" data-cam="2">
+    <div class="wrap">
+      <div class="col">
+        <p class="kicker"><b>02</b>My Journey</p>
+        <h2>From Curiosity<br>to <span class="accent">Real Impact.</span></h2>
+        <p class="body">I started by taking computers apart at a hardware shop in Kulithalai and grew into an engineer who leads teams and ships products people actually use — always focused on solving real problems.</p>
+        <a href="#experience" class="btn light sm">More About Me <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        <ol class="steps">
+          <li><i>💡</i><small>2012</small><h4>Curiosity</h4><p>Chip-level hardware &amp; assembly at JJ Computers.</p></li>
+          <li><i>&lt;/&gt;</i><small>2014–18</small><h4>Learning</h4><p>B.E. Computer Science, Kongunadu College. Two 1st prizes.</p></li>
+          <li><i>⬢</i><small>2018–22</small><h4>Building</h4><p>Enterprise systems for Blu, Bridgestone, Viagoo &amp; MTM.</p></li>
+          <li><i>✺</i><small>2023 →</small><h4>Impact</h4><p>Founded TechRatham, then joined Bhookle to build apps used by 100K+ people.</p></li>
+        </ol>
+      </div>
+      <p class="script">Same Person,<br>Different<br>Problems :)</p>
+    </div>
+  </section>
+
+  <!-- 03 EXPERIENCE -->
+  <section id="experience" class="sec side-r" data-cam="3">
+    <div class="wrap">
+      <div class="col">
+        <p class="kicker"><b>03</b>Experience</p>
+        <h2>My Professional <span class="accent">Journey</span></h2>
+        <ul class="timeline">
+          <li>
+            <span class="badge b-bh">BH</span>
+            <div><time>May 2024 – Present</time><h3>Bhookle</h3><em>Senior App Developer</em>
+            <p>Home-food delivery in Bengaluru &amp; Chennai, 100K+ installs. I own the Android/iOS customer and chef apps (React Native, Expo, Kotlin, Swift), the Angular/Ionic web and admin panels, Node/Express services and the PostgreSQL triggers, cron jobs, payments, analytics and releases behind them.</p></div>
+          </li>
+          <li>
+            <span class="badge b-tr">TR</span>
+            <div><time>Mar 2023 – Apr 2024</time><h3>TechRatham</h3><em>Founder &amp; Full Stack Developer</em>
+            <p>IT consultancy &amp; product studio, Kulithalai. Built Suvai Pazhagu (home-food app with Porter delivery &amp; PhonePe payments), planned products like AgaKural and AgamPorul, and sites for 6+ businesses.</p></div>
+          </li>
+          <li>
+            <span class="badge b-mtm">MT</span>
+            <div><time>2019 – 2022</time><h3>MicroTech Mines · USA</h3><em>Freelance Full Stack Developer</em>
+            <p>Owned every technical need of a US startup — built, deployed and hosted its web properties across SIT, UAT &amp; PROD on cPanel.</p></div>
+          </li>
+          <li>
+            <span class="badge b-q">Q</span>
+            <div><time>2018 – 2019</time><h3>Qantler Technologies</h3><em>Full Stack Developer cum Team Lead</em>
+            <p>Led Blu (Singapore) Fleet &amp; Logistics and Parcel Management systems with IO-locker integration, Bridgestone supplier tracking and Viagoo logistics. Onsite production rollout in Singapore.</p></div>
+          </li>
+          <li>
+            <span class="badge b-h">H</span>
+            <div><time>2018</time><h3>Haps Solutions</h3><em>PHP Full Stack Developer</em>
+            <p>Customised NexG's cloud fleet-management PaaS with Stripe payments and Google Maps.</p></div>
+          </li>
+          <li>
+            <span class="badge b-i">IN</span>
+            <div><time>Early 2018</time><h3>Internships</h3><em>Infynect Labs · The MTM Group</em>
+            <p>Docker &amp; container tech on a server OS team; live web changes &amp; GoDaddy deployments.</p></div>
+          </li>
+        </ul>
+      </div>
+      <p class="script">Continuous<br>growth, new<br>challenges.</p>
+    </div>
+  </section>
+
+  <!-- 04 STACK -->
+  <section id="stack" class="sec side-r" data-cam="4">
+    <div class="wrap">
+      <div class="col">
+        <p class="kicker"><b>04</b>Tech Stack</p>
+        <h2>Tools I <span class="accent">Work With</span></h2>
+        <p class="body">A mix of proven technologies to build scalable, reliable, high-performing products.</p>
+        <div class="tools" id="tools"></div>
+      </div>
+      <p class="script">Right tool<br>for the right<br>problem.</p>
+    </div>
+  </section>
+
+  <!-- 05 SKILLS -->
+  <section id="skills" class="sec side-l" data-cam="5">
+    <div class="wrap">
+      <div class="col">
+        <p class="kicker"><b>05</b>Skills</p>
+        <h2>What I Bring to the <span class="accent">Table</span></h2>
+        <div class="cards3">
+          <article class="card row"><i class="ic c1">⚛</i><div><h4>Frontend &amp; Mobile</h4><p>React, React Native, Angular, TypeScript, SCSS</p></div></article>
+          <article class="card row"><i class="ic c2">⬡</i><div><h4>Backend</h4><p>Spring Boot, Hibernate, Laravel, PHP, SOAP APIs</p></div></article>
+          <article class="card row"><i class="ic c3">▦</i><div><h4>Databases</h4><p>PostgreSQL, MySQL, MS SQL, Neo4j, Firebase</p></div></article>
+          <article class="card row"><i class="ic c4">⟳</i><div><h4>DevOps &amp; Cloud</h4><p>Docker, AWS, Git, cPanel · SIT → UAT → PROD</p></div></article>
+          <article class="card row"><i class="ic c5">₹</i><div><h4>Payments &amp; APIs</h4><p>PhonePe, PayPal webhooks, Stripe, Porter, Google Maps</p></div></article>
+          <article class="card row"><i class="ic c6">⚡</i><div><h4>IoT &amp; Creative</h4><p>Embedded C, Arduino, Blender, After Effects</p></div></article>
+        </div>
+        <blockquote class="quote">I enjoy building things that solve real problems and create value for people.</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 PROJECTS -->
+  <section id="projects" class="sec side-c" data-cam="6">
+    <div class="wrap wide">
+      <div class="col">
+        <div class="head-row">
+          <div>
+            <p class="kicker"><b>06</b>Featured Projects</p>
+            <h2>Products I've <span class="accent">Built</span></h2>
+          </div>
+          <p class="muted">Real-world products across mobile, web and enterprise logistics.</p>
+        </div>
+        <div class="filters" role="tablist">
+          <button class="on" data-f="all">All</button>
+          <button data-f="product">Products</button>
+          <button data-f="web">Web</button>
+          <button data-f="enterprise">Enterprise</button>
+          <button data-f="rnd">R&amp;D</button>
+        </div>
+        <div class="projects" id="projectGrid"></div>
+      </div>
+      <p class="script proj-script">Real Products.<br>Real Users.<br>Real Impact.</p>
+    </div>
+  </section>
+
+  <!-- 07 CONTACT -->
+  <section id="contact" class="sec side-l" data-cam="7">
+    <div class="wrap">
+      <div class="col">
+        <p class="kicker"><b>07</b>Let's Connect</p>
+        <h2>Let's Build<br>Something <span class="accent">Great.</span></h2>
+        <p class="body">Always open to discussing new opportunities, interesting projects, or just tech and product ideas.</p>
+        <div class="contacts">
+          <a href="mailto:sharewithramnath@gmail.com" class="ct"><i class="ic red">✉</i><div><b>Email</b><span>sharewithramnath@gmail.com</span></div><em>→</em></a>
+          <a href="https://github.com/ramnath1997" target="_blank" rel="noopener" class="ct"><i class="ic dark"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.3 6.4-1.5 6.4-7A5.4 5.4 0 0 0 20 4.8 5 5 0 0 0 19.9 1S18.7.7 16 2.5a13.4 13.4 0 0 0-7 0C6.3.7 5.1 1 5.1 1A5 5 0 0 0 5 4.8a5.4 5.4 0 0 0-1.5 3.7c0 5.4 3.3 6.6 6.4 7a3.4 3.4 0 0 0-.9 2.6V22"/></svg></i><div><b>GitHub</b><span>github.com/ramnath1997</span></div><em>→</em></a>
+        </div>
+      </div>
+      <p class="script">Open to<br>Opportunities<br>and<br>Collaboration.</p>
+    </div>
+  </section>
+
+  <footer class="foot" data-cam="8">
+    <div class="logo big">R<span>B</span></div>
+    <p>Ramnath Babu · Build · Solve · Create Impact</p>
+    <small>© 2026 · Chennai, India</small>
+  </footer>
+</main>
+
+<script src="app.js" defer></script>
+<script type="module" src="scene.js"></script>
+</body>
+</html>
