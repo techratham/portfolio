@@ -4,3 +4,4 @@ source-art/
 node_modules/
 .vercel
 *.mp4
+.env*

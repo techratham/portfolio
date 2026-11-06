@@ -1,0 +1,7 @@
+source-art
+*.mp4
+.claude
+.env*
+.DS_Store
+node_modules
+README.md
